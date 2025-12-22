@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Explorer</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Course Explorer</h1>
+        </header>
+
+        <section class="upload-section">
+            <h2>Load Courses (JSON)</h2>
+            <div class="file-upload">
+                <input type="file" id="fileInput" accept=".json">
+                <label for="fileInput" class="file-label">Choose File</label>
+                <span id="fileName">No file chosen</span>
+            </div>
+            <div id="errorMessage" class="error-message"></div>
+        </section>
+
+        <hr>
+
+        <section class="controls-section">
+            <h2>Sort and Filter</h2>
+            <div class="controls-grid">
+
+                <div class="control-group">
+                    <label for="departmentFilter">Department:</label>
+                    <select id="departmentFilter">
+                        <option value="all">All</option>
+                    </select>
+                </div>
+                
+                <div class="control-group">
+                    <label for="levelFilter">Level:</label>
+                    <select id="levelFilter">
+                        <option value="all">All</option>
+                    </select>
+                </div>
+                
+                <div class="control-group">
+                    <label for="creditsFilter">Credits:</label>
+                    <select id="creditsFilter">
+                        <option value="all">All</option>
+                    </select>
+                </div>
+                
+                <div class="control-group">
+                    <label for="instructorFilter">Instructor:</label>
+                    <select id="instructorFilter">
+                        <option value="all">All</option>
+                    </select>
+                </div>
+                
+                <div class="control-group">
+                    <label for="sortSelect">Sort By:</label>
+                    <select id="sortSelect">
+                        <option value="none">None</option>
+                        <option value="id-asc">ID (A-Z)</option>
+                        <option value="id-desc">ID (Z-A)</option>
+                        <option value="title-asc">Title (A-Z)</option>
+                        <option value="title-desc">Title (Z-A)</option>
+                        <option value="semester-asc">Semester (Earliest first)</option>
+                        <option value="semester-desc">Semester (Latest first)</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <main class="main-content">
+            <div class="course-list-section">
+                <h3>Courses</h3>
+                <div id="courseList" class="course-list">
+                    <p class="no-data">Please upload a JSON file to load courses</p>
+                </div>
+            </div>
+
+            <div class="course-detail-section">
+                <h3>Course Details</h3>
+                <div id="courseDetail" class="course-detail">
+                    <p class="no-data">Select a course to view details</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
