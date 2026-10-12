@@ -29,11 +29,13 @@ This project gave me more experience with:
 - File input using the FileReader API
 - Basic error handling
 
+
 ## Running the Project
 
 Clone the repository and open `index.html` in your browser.
 
 ```bash
+git clone https://github.com/aprabah/course-explorer.git
 git clone https://github.com/aprabah/course-explorer.git
 
 ## About
