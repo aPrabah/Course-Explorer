@@ -34,10 +34,9 @@ This project gave me more experience with:
 
 Clone the repository and open `index.html` in your browser.
 
-```bash
-git clone https://github.com/aprabah/course-explorer.git
+
 git clone https://github.com/aprabah/course-explorer.git
 
-## About
+##
 
 Originally developed for a university web development course, this project focuses on JavaScript, DOM manipulation, JSON data handling, filtering, and sorting.
